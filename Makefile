@@ -28,8 +28,8 @@ venv:
 		echo "$(GREEN)✅ Venv já existe$(NC)"; \
 	fi
 
-.PHONY: setup
-setup: venv
+.PHONY: install
+install: venv
 	@echo "$(GREEN)Instalando dependências...$(NC)"
 	$(VENV_DIR)/bin/pip install --upgrade pip
 	$(VENV_DIR)/bin/pip install colorama pygame
