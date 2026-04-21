@@ -12,10 +12,11 @@ VENV_DIR = venv
 help:
 	@echo "$(GREEN)📚 Comandos disponíveis:$(NC)"
 	@echo ""
-	@echo "  make setup    - Instalar dependências no venv"
-	@echo "  make run      - Executar o jogo"
-	@echo "  make clean    - Limpar arquivos temporários"
-	@echo "  make venv     - Criar ambiente virtual (se não existir)"
+	@echo "  make install    	- Instalar dependências no venv"
+	@echo "  make run		- Executar o jogo"
+	@echo "  make clean    	- Limpar arquivos temporários"
+	@echo "  make clean-venv    	- Limpar ambiente virtual"
+	@echo "  make venv     	- Criar ambiente virtual (se não existir)"
 	@echo ""
 
 .PHONY: venv
@@ -60,8 +61,5 @@ clean-venv:
 	@echo "$(GREEN)Removendo ambiente virtual...$(NC)"
 	rm -rf $(VENV_DIR)
 	@echo "$(GREEN)✅ Venv removido!$(NC)"
-
-.PHONY: reinstall
-reinstall: clean-venv setup
 
 .DEFAULT_GOAL := help
