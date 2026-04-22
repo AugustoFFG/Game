@@ -5,8 +5,10 @@ RED = \033[0;31m
 YELLOW = \033[1;33m
 NC = \033[0m
 
-PROGRAM = jogo.py  # ← Alterado de main.py para jogo.py
+PROGRAM = main.py 
 VENV_DIR = venv
+PYTHON = $(VENV_DIR)/bin/python
+PIP = $(VENV_DIR)/bin/pip
 
 .PHONY: help
 help:
@@ -39,7 +41,7 @@ install: venv
 .PHONY: run
 run:
 	@if [ ! -d "$(VENV_DIR)" ]; then \
-		echo "$(RED)❌ Venv não encontrado. Execute: make setup$(NC)"; \
+		echo "$(RED)❌ Venv não encontrado. Execute: make install$(NC)"; \
 		exit 1; \
 	fi
 	@echo "$(GREEN)Iniciando o jogo...$(NC)"
