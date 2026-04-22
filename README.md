@@ -2,7 +2,7 @@
 
 Projeto desenvolvido durante o curso de **Python Orientado a Objetos** da Rocketseat. Um jogo simples implementado com os princípios de Programação Orientada a Objetos.
 
-## 📋 Índice
+## 📋 Índice 
 
 - [Sobre o Projeto](#sobre-o-projeto)
 - [Tecnologias Utilizadas](#tecnologias-utilizadas)
@@ -54,7 +54,7 @@ make claen-venv
 make venv
 ```
 
-## 🎮 Como Jogar
+## 🎮 Como Jogar 🕹️
 
 ### Heróis:
 
