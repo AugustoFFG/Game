@@ -93,3 +93,9 @@ make venv
 Augusto F. F. Gomes
 
 GitHub: @AugustoFFG
+
+## 👨‍💻 Colaboradores
+
+Gabriel A. Bastos
+
+Github: @gLx-19
