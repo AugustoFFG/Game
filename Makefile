@@ -54,8 +54,8 @@ run:
 .PHONY: clean
 clean:
 	@echo "$(GREEN)Limpando arquivos temporários...$(NC)"
-	rm -rf __pycache__
-	rm -rf *.pyc
+	find . -type d -name "__pycache__" -exec rm -rf {} +
+	find . -type f -name "*.pyc" -delete
 	@echo "$(GREEN)✅ Limpeza concluída!$(NC)"
 
 .PHONY: clean-venv
